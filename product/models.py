@@ -25,6 +25,8 @@ class Product(models.Model):
     featured = models.BooleanField(default=False)
     active = models.BooleanField(default = True)
 
+    objects= ProductManager()
+
     def __str__(self):
         return self.title
 
